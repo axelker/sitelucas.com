@@ -56,7 +56,7 @@ box-shadow: 5px 10px 5px 0px #fec675;
    		font-size:1.1em;
 	}
 	.navbar .container img { /* Diminuer taille logo quand page = 650 px */
-		width: 70px;
+		width: 60px;
 	}
 }
 
