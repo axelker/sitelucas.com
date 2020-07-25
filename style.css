@@ -4,11 +4,23 @@
 	box-sizing: border-box;
 	
 }
+@font-face {
+	font-family: "GodOfWar";
+	src: url('GODOFWAR.ttf');
+	
+}
+@font-face {
+	font-family: "Fanwood";
+	src: url('Fanwood.otf');
+	
+}
+
 h1,h2,h3,h4,h5,h6 {
 	text-transform: uppercase;
+	font-family: "GodOfWar";
 }
 p {
-	font-family: "serif";
+	font-family: "Fanwood";
 }
 body {
 	background-color: #1d1e31;
@@ -41,7 +53,7 @@ box-shadow: 5px 10px 5px 0px #fec675;
 .navbar .container a {
 	color:white;
 	text-decoration:none; /* pas de soulignement */
-	font-family: serif;
+	font-family: "GodOfWar";
 	font-size:1.5em;*	{
 	margin:0;
 	padding:0;
