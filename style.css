@@ -1,0 +1,540 @@
+*	{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	
+}
+@font-face {
+	font-family: "GodOfWar";
+	src: url('GODOFWAR.ttf');
+	
+}
+@font-face {
+	font-family: "Fanwood";
+	src: url('Fanwood.otf');
+	
+}
+
+
+	
+
+h1,h2,h3,h4,h5,h6 {
+	text-transform: uppercase;
+	font-family: "GodOfWar";
+	
+}
+p {
+	font-family: "Fanwood";
+}
+body {
+	background-color: #1d1e31;
+	
+}
+
+/* Barre de navigation Menu */
+
+.navbar {
+
+height: 100px;  /* hauteur */
+width: 100%;
+display: flex;
+align-items: center;
+box-shadow: 5px 10px 5px 0px #fec675;
+
+	
+}
+
+.navbar .container {
+	width: 900px;  /* taille navbar en long */
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	align-items: center;	
+	justify-content: space-evenly;
+
+	
+}
+.navbar .container a {
+	color:white;
+	text-decoration:none; /* pas de soulignement */
+	font-family: "GodOfWar";
+	font-size:1.5em;
+	font-weight:400;
+	
+}
+
+.navbar .container a:hover {  /* Couleur du menu lros du passage */
+	color:#fec675;
+}
+
+@media (max-width: 950px) {   /*diminuer la police quand la page faot 650px*/
+	.navbar .container a {
+   		font-size:1.2em;
+	}
+	.navbar .container img { /* Diminuer taille logo quand page = 650 px */
+		width: 70px;
+	}
+}
+
+/* Section 1 pour l'image , paragraphe et titre */
+
+.sec1 {
+	margin-top:80px;    /* Marge entre la nav bar et les elements du bas */
+	
+}
+.sec1 .container {
+	display: flex;
+	align-items: center;
+	max-width: 1500px;
+	margin: 0 auto;
+}
+
+.sec1 .container .left h1 {
+	font-size:7em;
+	color:white;
+	text-shadow: 0px 0px 10px black; /* couleur Ombre du titre H1  */
+}
+
+.sec1 .container .left p {
+	font-size:1.7em;
+	color:#888888;
+	max-width: 800px;
+	font-weight:bolder;
+	margin: 55px 0;
+	padding:17px;
+	box-shadow: 10px 10px 15px 5px #fec675;
+	animation: shadow 5s infinite ease-in-out;
+	border-radius:15px;
+	
+	
+}
+
+/* Animation shadow */ 
+
+@keyframes shadow {
+	0% {
+		box-shadow: 0px 0px 20px 20px #fec675;
+	}
+	
+	20% {
+		box-shadow: 0px 0px 20px 0px #fec675;
+	}
+	40% {
+		box-shadow: 0px 0px 20px -10px #fec675;
+	}
+	100% {
+		box-shadow: 0px 0px 20px 20px #fec675;
+	}
+}
+
+
+.sec1 .container .left button {
+	width: 300px;
+	height: 65px;
+	border-radius: 15px;
+	border: none;
+	color: black;
+	font-size: 1.2em;
+	font-weight:800;
+	background-color: #fec675;
+	box-shadow: 0px 0px 10px #fec675; 
+}
+
+@media (max-width: 1500px) {
+	.sec1 .container .left h1 {
+		font-size:5em;
+	}
+}
+
+@media (max-width: 1300px) {
+	.sec1 .container {
+	flex-direction: column;
+	
+	}
+
+	.sec1 .right {
+		display:flex;
+		flex-direction: column;
+		align-items:center;
+		
+	}
+	.sec1 .left {
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			align-items: center;
+	}
+	.sec1 .right img {
+		margin-top: 50px;
+		width:70%;
+		
+	}
+	}
+	
+
+@media (max-width: 650px) {
+	.sec1 .container .left h1 {
+		font-size: 3.5em;
+	}
+	.sec1 .container .left p {
+		margin:40px 35px;
+		font-size:1.2em;
+		text-align:left;
+	}
+}
+
+
+
+/* Section 2 */
+
+
+.sec2 
+{
+	z-index: 99;
+	overflow:hidden;
+	background-image: url(image/bg.png);
+	background-position:center;
+	background-attachment:fixed;  /* Pour que le fonds ne bouge pas quand on s'crolle */
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	
+	
+}
+.sec2 .title {
+			margin-left:20px;
+			margin-bottom:80px;
+			box-shadow: 0px 0px 5px 5px #fec675;
+			padding:17px;
+}
+.sec2 .piquedown {
+	filter: drop-shadow(0px 8px 5px rgba(254, 198, 117, 0.75));
+	width:100%;
+}
+.sec2 .piqueup {
+	filter: drop-shadow(0px -8px 5px rgba(254, 198, 117, 0.75));
+	margin-bottom:-25px;
+	width:100%;
+}
+.sec2 img {
+	margin-bottom:25px;
+	filter: drop-shadow(0px 8px 5px rgba(254, 198, 117, 0.75));
+}
+
+
+.sec2 .title h4 {
+	color:#fec675;
+	font-size:3em;
+}
+.sec2 .title h1 {
+	color:white;
+	font-size:5em;
+	
+	
+}
+
+
+.sec2 .container {
+	display: flex;
+	flex-flow: row wrap;
+	max-width: 1500px;
+	margin: 0 auto;
+	
+}
+
+
+.sec2 .container .left {
+	text-align:right;
+	color:#fec675;
+	max-width:500px;
+	margin-left:-250px;
+	
+}
+
+.sec2 .container .right {
+	text-align:right;
+	color:#fec675;
+	max-width:500px;
+	margin-left:150px;
+
+	
+}
+ 
+.sec2 .container h3 {
+	color:#fec675;
+	font-size:20px;
+}
+.sec2 .container p {
+		color:white;
+		margin-bottom:20px;
+}
+.sec2 button {
+	margin-top:50px;
+	margin-left:-100px;
+	width: 400px;
+	height: 50px;
+	border-radius: 15px;
+	border: none;
+	color: black;
+	font-size: 1.0em;
+	font-weight:700;
+	background-color: #fec675;
+	box-shadow: 0px 0px 10px #fec675; 
+	animation: shadow 5s infinite ease-in-out;
+}
+
+@media (max-width: 1050px) {
+	.sec2 .title  {
+		font-size:0.8em;
+		margin-left:-20px;
+		margin-bottom:50px;
+	}
+	.sec2 .container {
+		flex-direction:column;
+		align-items:center;
+	}
+	.sec2 .container .left,
+	.sec2 .container .right  {
+		max-width:none;
+		margin:0 100px;
+	}
+
+
+	.sec2 .container .right p {
+		font-size: 1.1em;
+		text-align:right;
+		margin-bottom:15px;
+		
+		
+		
+	}
+	.sec2 .container .left p {
+		
+		text-align:right;
+		margin-left:50px;
+		
+		
+		
+	}
+	.sec2 .container .right h3 {
+		font-size:1.2em;
+		text-align:right;
+		margin-right:90px;
+		
+	}
+	.sec2 .container .right img {
+		width:90%;
+		align-items:center;
+		
+}
+.sec2 .container .left img {
+		width:80%;
+		align-items:center;
+		margin-bottom:15px;
+}
+.sec2 button {
+	
+	margin-top:50px;
+	margin-left:10px;
+	width: 300px;
+	height: 50px;
+	border-radius: 15px;
+	border: none;
+	color: black;
+	font-size: 1.0em;
+	font-weight:700;
+	background-color: #fec675;
+	box-shadow: 0px 0px 10px #fec675; 
+	animation: shadow 5s infinite ease-in-out;
+}
+	
+}
+
+/* Section 3 */
+
+
+.sec3 .center {
+	display: flex;
+	justify-content: center;
+	margin-bottom:40px;
+	
+}
+
+
+.sec3 .title h4 {
+	color:#fec675;
+	font-size:2em;
+}
+.sec3 .title h1 {
+	margin-left:-50px;
+	margin-top:30px;
+	color:white;
+	font-size:5em;
+	
+	
+}
+.sec3 .card {
+	height:550px; /*hauteur de la carte */
+	width:400px;  /* longueur de la carte */
+	background-color:#353448;
+	border-radius:15px;
+	margin:20px;
+	overflow:hidden;
+}
+
+
+.sec3 .container {
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:evenly;  /* espace entre les carte */
+	max-width:1500px;
+	margin:0 auto;
+}
+.sec3 .card .top {
+	background: linear-gradient(to top, #353448 ,#bf3235);
+	position:relative;
+	height: 340px;
+	top:-90px;
+}
+.sec3 .card .top img {
+	
+	position:relative;
+	top:40px;
+	filter: drop-shadow(0px 8px 5px rgba(254, 198, 117, 0.75));
+
+}
+
+
+.sec3 .card .bottom {
+	margin:0 20px;
+}
+
+.sec3 .card:nth-child(1) .description {
+	text-align:center;
+	margin:10px;
+	margin-top:-40px;
+	color: #b1b1b1;
+	font-size:1.2em;
+	
+
+}
+.sec3 .card:nth-child(2) .description {
+	text-align:center;
+	margin:8px;
+	color: #b1b1b1;
+	font-size:1.2em;
+	
+
+}
+
+.sec3 .card:nth-child(3) .description {
+	text-align:center;
+	margin:8px;
+	margin-top:-20px;
+	color: #b1b1b1;
+	font-size:1.2em;
+	
+
+}
+.sec3 .card:nth-child(1) .bottom {
+	position: relative;
+	top:-150px;
+}
+
+.sec3 .card:nth-child(2) .bottom {
+	position: relative;
+	top:-100px;
+}
+.sec3 .card:nth-child(3) .bottom {
+	position: relative;
+	top:-150px;
+}
+
+.sec3 .card:nth-child(1) h1,
+.sec3 .card:nth-child(1) h4 {
+	 text-align:right;
+ }
+ .sec3 .card:nth-child(2) h1,
+.sec3 .card:nth-child(2) h4 {
+	 text-align:center;
+ }
+ 
+ .sec3 .card h1 {
+	 color:white;
+	 font-size:2em;
+ }
+.sec3 .card h4 {
+	 color:#fec675;
+	 font-weight:bold;
+	 font-size:1.5em;
+ }
+.sec3 .card:nth-child(1) .top{
+	transform: skew(0deg, -25deg);
+}
+.sec3 .card:nth-child(3) .top{
+	transform: skew(0deg, 25deg);
+}
+
+.sec3 .card:nth-child(1) img {
+	
+transform: skew(0deg, 25deg);
+	left:5px;
+}
+.sec3 .card:nth-child(2) img {
+	left:70px;
+	top:100px;
+}
+
+.sec3 .card:nth-child(3) img {
+	display:flex;
+	justify-content:flex-end;
+	align-items:baseline;
+transform: skew(0deg, -25deg);
+	right:-200px;
+	
+}
+
+@media (max-width: 700px) {
+	.sec3 {
+	margin-left:20px;
+	}
+}
+
+/* Pieds de page footer */
+footer {
+	margin-top:30px;
+	height:180px;
+	background-color:#353448;
+	align-items:center;
+}
+footer .container 
+{
+	display:flex;
+	flex-flow:row wrap;
+	justify-content: space-evenly;
+	max-width:1500px;
+	margin:0 auto;
+}
+
+footer .container h1 {
+	color: #fec675;
+	margin-bottom:20px;
+	margin-top:5px;
+	
+}
+footer .container p, 
+footer .container a {
+	color: white;
+	text-decoration:none;
+	margin-bottom:8px;
+	font-size:1.1em;
+	
+}
+
+footer .container .left {
+	display:flex;
+	flex-direction: column;
+	
+}
+	
+	
