@@ -284,7 +284,8 @@ box-shadow: 5px 10px 5px 0px #fec675;
 }
 
 @media (max-width: 1050px) {
-	.sec2 .title  {
+	.sec2 .title h4,
+	.sec2 title h1 {
 		font-size:0.8em;
 		margin-left:-20px;
 		margin-bottom:50px;
