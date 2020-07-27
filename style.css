@@ -172,9 +172,9 @@ box-shadow: 5px 10px 5px 0px #fec675;
 	}
 	
 
-@media (max-width: 650px) {
+@media (max-width: 750px) {
 	.sec1 .container .left h1 {
-		font-size: 3.5em;
+		font-size: 3em;
 	}
 	.sec1 .container .left p {
 		margin:40px 35px;
