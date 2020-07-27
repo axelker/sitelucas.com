@@ -67,12 +67,12 @@ box-shadow: 5px 10px 5px 0px #fec675;
 	color:#fec675;
 }
 
-@media (max-width: 950px) {   /*diminuer la police quand la page faot 650px*/
+@media (max-width: 650px) {   /*diminuer la police quand la page faot 650px*/
 	.navbar .container a {
-   		font-size:1.2em;
+   		font-size:1em;
 	}
 	.navbar .container img { /* Diminuer taille logo quand page = 650 px */
-		width: 70px;
+		width: 12%;
 	}
 }
 
