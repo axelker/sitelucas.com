@@ -537,4 +537,13 @@ footer .container .left {
 	
 }
 	
+@media (max-width:700px) {
+	footer .container h1 {
+		font-size:1.2em;
+	}
+	footer .container p,
+	footer .container a {
+		font-size:1em;
+	}
 	
+}	
